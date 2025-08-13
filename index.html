@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>💰 Finance Tracker</h1>
+        <button id="themeToggle">🌙</button>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <input type="text" id="desc" placeholder="Expense Description">
+            <input type="number" id="amount" placeholder="Amount ₹">
+            <select id="category">
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Bills</option>
+                <option>Other</option>
+            </select>
+            <button id="addExpense">Add</button>
+        </section>
+
+        <section class="summary-section">
+            <h2>Total Expense: ₹<span id="totalAmount">0</span></h2>
+        </section>
+
+        <section class="list-section">
+            <h2>Expenses</h2>
+            <ul id="expenseList"></ul>
+        </section>
+
+        <section class="tip-section">
+           <h2>💡 Savings Tip</h2>
+            <p id="tipText"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
